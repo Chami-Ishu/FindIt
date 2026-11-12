@@ -14,6 +14,7 @@ import {
   Menu,
   Sparkles,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import "./App.css";
 
@@ -60,7 +61,7 @@ const initialItems = [
   },
 ];
 
-function App() {
+function HomePage() {
   const [items, setItems] = useState(initialItems);
   const [search, setSearch] = useState("");
   const [activeFilter, setActiveFilter] = useState("All");
@@ -143,8 +144,8 @@ function App() {
           </nav>
 
           <div className="nav-actions">
-            <button className="login-btn">Log In</button>
-            <button className="register-btn">Sign Up</button>
+            <Link to="/login" className="login-btn">Log In</Link>
+            <Link to="/register" className="register-btn">Sign Up</Link>
           </div>
 
         </div>
@@ -550,8 +551,8 @@ function App() {
             <div>
               <h4>Explore</h4>
               <a href="#home">Home</a>
-              <a href="#items">Lost Items</a>
-              <a href="#items">Found Items</a>
+              <Link to="/lost-items">Lost Items</Link>
+              <Link to="/found-items">Found Items</Link>
             </div>
 
             <div>
@@ -669,4 +670,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;

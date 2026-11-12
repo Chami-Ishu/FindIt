@@ -1,0 +1,114 @@
+.item-card {
+  background: white;
+  border: 1px solid #e8eeeb;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.item-image-container {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-badge {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  padding: 6px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.item-badge.lost {
+  background: #fff0ed;
+  color: #d94e3f;
+}
+
+.item-badge.found {
+  background: #e5f7ed;
+  color: #218653;
+}
+
+.item-card-content {
+  padding: 20px;
+}
+
+.item-category {
+  color: #287b68;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.item-card-content h3 {
+  color: #173f36;
+  font-size: 18px;
+  margin: 9px 0;
+}
+
+.item-description {
+  color: #78847e;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 42px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.item-info span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #687770;
+  font-size: 12px;
+}
+
+.item-details-btn {
+  width: 100%;
+  height: 43px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.lost-btn {
+  background: #fff0ed;
+  color: #d94e3f;
+}
+
+.lost-btn:hover {
+  background: #fbdcd6;
+}
+
+.found-btn {
+  background: #e5f7ed;
+  color: #218653;
+}
+
+.found-btn:hover {
+  background: #cceedd;
+}

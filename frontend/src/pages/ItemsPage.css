@@ -1,0 +1,160 @@
+.items-page {
+  min-height: 100vh;
+  background: #f8faf9;
+  font-family: inherit;
+}
+
+.items-navbar {
+  height: 75px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #e9efec;
+}
+
+.items-logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #174c43;
+  text-decoration: none;
+}
+
+.items-logo span {
+  color: #45a486;
+}
+
+.items-home-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #52635b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.items-home-link:hover {
+  color: #287b68;
+}
+
+.items-hero {
+  padding: 65px 8%;
+  background: linear-gradient(120deg, #e6f5ee, #f2faf6);
+}
+
+.items-hero-content {
+  max-width: 750px;
+}
+
+.items-label {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.lost-label {
+  background: #ffe7e2;
+  color: #d94e3f;
+}
+
+.found-label {
+  background: #d9f4e5;
+  color: #218653;
+}
+
+.items-hero h1 {
+  color: #174c43;
+  font-size: 42px;
+  margin: 17px 0 12px;
+}
+
+.items-hero p {
+  color: #687a72;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.items-count {
+  margin-top: 22px;
+  color: #287b68;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.items-section {
+  padding: 55px 8%;
+}
+
+.items-section-heading {
+  margin-bottom: 30px;
+}
+
+.items-section-heading h2 {
+  color: #173f36;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.items-section-heading p {
+  color: #7a8881;
+  font-size: 14px;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.no-items {
+  text-align: center;
+  padding: 70px 20px;
+  color: #829089;
+}
+
+.no-items h3 {
+  color: #174c43;
+  margin: 15px 0 8px;
+}
+
+.items-footer {
+  padding: 25px;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #e9efec;
+  color: #7a8881;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .items-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .items-navbar {
+    padding: 0 5%;
+  }
+
+  .items-hero {
+    padding: 50px 6%;
+  }
+
+  .items-hero h1 {
+    font-size: 33px;
+  }
+
+  .items-section {
+    padding: 40px 5%;
+  }
+
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
